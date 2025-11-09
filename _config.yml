@@ -1,0 +1,39 @@
+# Site settings -------------------------------------------------------------
+title: "Dr. Michel Fabrice Serret"
+description: >
+  Personal page of Fabrice Serret.
+url: "https://fserret.github.io"          # the base URL of your site
+baseurl: ""                              # leave empty unless you host under a subpath
+
+# Theme ---------------------------------------------------------------
+theme: minima
+minima:
+  skin: auto               # light/dark switch if you wish
+
+# Markdown settings --------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM               # GitHub Flavored Markdown
+
+# Collections -------------------------------------------------------------
+collections:
+  pages:
+    output: true
+    permalink: /blog/:title/
+
+# Plugins ---------------------------------------------------------------
+plugins:
+  - jekyll-sass-converter
+  - jekyll-feed
+  - jekyll-scholar
+
+# Scholar configuration ----------------------------------------------------
+scholar:
+  style: apa
+  sort_by: year,month
+  source: _bibliography
+  bibliography: scholar.bib
+  bibliography_list_attributes: { "class" : "bibliography" }
+
+# Exclude ---------------------------------------------------------------
+exclude: [README.md, Gemfile, Gemfile.lock]

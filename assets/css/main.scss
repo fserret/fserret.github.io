@@ -1,0 +1,92 @@
+---
+---
+
+@import "minima"; // Import the base Minima theme styles
+
+// Custom font import
+@import url('https://fonts.cdnfonts.com/css/dejavu-sans-mono');
+
+// Set color for markdown titles (h1-h6)
+h1 {
+  color: rgb(22.9483471074, 86.2541322314, 168.5516528926);
+}
+
+// General body styles
+body {
+  font-family: 'DejaVu Sans Mono', sans-serif;
+  line-height: 1.6;
+  margin:0;
+}
+header {
+  font-family: 'DejaVu Sans Mono', sans-serif;
+  line-height: 1.6;
+  margin:0;
+}
+
+// Header, nav, footer styles (from your old assets/css/main.css)
+header.site-header { background:#f5f5f5; padding:1rem;}
+nav ul { list-style:none; display:flex; gap:.75rem; margin:0;padding:0;}
+footer.site-footer { text-align:center; font-size:.9rem; margin-top:2rem;}
+
+/* -------------------------------------------------------------
+   Center the entire home page content
+   ------------------------------------------------------------- */
+.home-container {
+  display: flex;
+  flex-direction: column;          // stack vertically on mobile
+  align-items: top;             // horizontal centering
+  text-align: left;              // centre the paragraph/text inside
+  padding: 0rem;
+}
+
+/* -------------------------------------------------------------
+   Profile picture – circular, responsive
+   ------------------------------------------------------------- */
+.profile-container {
+  flex-basis: 40%; // Assign a base width, e.g., 40% of the container
+  flex-shrink: 0; // Prevent the container from shrinking
+  margin-right: 2rem;
+}
+
+.profile-img {
+  width: 400px;                     // Make image fill its container
+  height: auto;                    // Adjust height automatically
+  //aspect-ratio: 1 / 1;             // Maintain a square shape, adjust if needed
+  object-fit: cover;               // Crop to fill, keeps aspect ratio
+  border-radius: 0%;               // makes it round
+  margin-bottom: 0.5rem;             // space below image
+}
+
+/* -------------------------------------------------------------
+   Optional – make the layout side‑by‑side on larger screens
+   ------------------------------------------------------------- */
+@media (min-width: 480px) {
+  .home-container {
+    flex-direction: row;            // side‑by‑side
+    justify-content: left;
+  }
+  .profile-img {
+    margin-bottom: 0; // Remove bottom margin on large screens
+  }
+}
+
+/* -------------------------------------------------------------
+   Responsive tables for mobile (e.g., on CV page)
+   ------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .content table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* -------------------------------------------------------------
+   Wider content area for main container
+   We target .container, which is used in your custom layout.
+   ------------------------------------------------------------- */
+.container {
+  max-width: 1200px; // You can adjust this value
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem; // Add padding to prevent content from touching edges
+}
