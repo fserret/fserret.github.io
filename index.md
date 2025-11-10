@@ -31,7 +31,7 @@ Indeed, during my PhD, I worked on determining the computational complexity for 
 <br>
 **Explore**:  
 - [CV](/cv/) – Professional experience, academic background & research record, bref, a CV!
-- [Blog](/blog/) – Here you will find the latest updates and insights from my research as well as notes on things that I find of interest!
+<!--- - [Blog](/blog/) – Here you will find the latest updates and insights from my research as well as notes on things that I find of interest!-->
 - [Publications](/publications/) – My papers, preprints and thesis manuscripts.
 
 </div>
