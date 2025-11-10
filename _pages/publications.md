@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: page_bib
 title: Publications
 permalink: /publications/
 ---
 
-{% bibliography sort_by="year,month" filter="serret2020, serret2024" %}
+{% bibliography --sort_by year,month --order descending %}
