@@ -43,7 +43,14 @@ permalink: /cv/
 | 2013‑2016 | Double undergraduate degree – Physics & Mathematics | Sorbonne Université (UPMC), Paris | – |
 
 ---
+## Reviewer
 
+| Year | Journal/Conference |
+|------|-------------|------------------|
+|2025‑2026|ESAIM: Mathematical Modelling and Numerical Analysis|
+|2020| Principles and Practice of Constraint Programming - 26th International Conference, CP 2020 |
+
+---
 ## Talks & Posters
 
 | Date | Venue | Conference/Workshop | Type |
