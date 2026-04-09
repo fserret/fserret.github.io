@@ -1,6 +1,6 @@
 ---
 layout: page_bib
-title: Publications
+title: Publications & Preprints
 permalink: /publications/
 ---
 
